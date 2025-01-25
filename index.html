@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Pop Music Radio | Enjoy</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='glow.css'>
+    <script src='main.js'></script>
+    <link href="inconsolata/inconsolata.css" rel="stylesheet">
+    <style>
+        #popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #1e1e1e;
+            color: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            text-align: center;
+            display: none;
+        }
+
+        #popup h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        #popup p {
+            margin-bottom: 20px;
+        }
+
+        #popup a {
+            color: #7E60BF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #popup a:hover {
+            text-decoration: underline;
+        }
+
+        #popup button {
+            background-color: #7E60BF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #popup button:hover {
+            background-color: #5e4692;
+        }
+
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 999;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div id="topmenu">
+            <div>
+                <button id="menuButton" onclick="openAboutUs()">About Us & DMCA</button>
+                <button id="menuButton" onclick="openViraSoftware()">Vira Software</button>
+                <button id="menuButton" onclick="openGitHub()">GitHub</button>
+                <button id="menuButton" onclick="openSerenDipiWare()">Serendipiware</button>
+            </div>
+        </div>
+    </nav>
+    <div id="liveSign">
+        <div id="liveSignCircle"></div>
+        <div>
+            <span id="liveSignText">Live</span>
+        </div>
+    </div>
+    <div id="mainItems">
+        <div id="logoDiv">
+            <div class="glow"></div>
+        </div>
+        <div id="logoTextDiv">
+            <h1 id="logoText">POP MUSIC RADIO</h1>
+            <p id="slogan">Enjoy</p>
+            <button id="buttonPlay" onclick="playStream()">PLAY</button>
+        </div>
+    </div>
+
+    <div id="overlay"></div>
+
+    <div id="popup">
+        <h2>Exciting News!</h2>
+        <p>We're renaming to <strong>Saturn Radio</strong>! 🎵</p>
+        <a href="https://saturnradio.netlify.app/" target="_blank">Check it out here!</a>
+        <br><br>
+        <button onclick="closePopup()">Got it!</button>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const popup = document.getElementById('popup');
+            const overlay = document.getElementById('overlay');
+
+            popup.style.display = 'block';
+            overlay.style.display = 'block';
+
+            window.closePopup = function() {
+                popup.style.display = 'none';
+                overlay.style.display = 'none';
+            };
+        });
+    </script>
+</body>
+</html>

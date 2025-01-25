@@ -1,0 +1,224 @@
+body {
+    /* background-color: #CB9DF0; */
+    background-color: #000000;
+}
+#topmenu {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0px 0px 0px;
+    
+}
+#menuButton {
+    margin: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    padding: 7px 14px;
+    color: #FFFFFF;
+    background-color: #000000;
+    box-shadow: 0px 12px 20px 1px rgba(0, 0, 0, 0.25);
+    transition-property: color, background-color;
+    transition-duration: 400ms;
+    border: 1px solid #ffffff;
+}
+#menuButton:hover {
+    color: #000000;
+    background-color: #ffffff;
+}
+#liveSign {
+    width: 65px;
+    height: 27px;
+    background-color: #000000;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 25px;
+    right:  25px;
+    border: 1px solid #ffffff;
+}
+#liveSignText {
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+#liveSignCircle {
+    width: 18px;
+    height: 18px;
+    background-color: red;
+    border-radius: 100%;
+}
+#mainItems {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+#mainItems div {
+    margin: 0px 30px;
+}
+#logoTextDiv {
+    text-align: center;
+}
+#popMusicRadioLogo {
+    border-radius: 100%;
+    width: 250px;
+    
+    /* filter: blur(10px); */
+    
+}
+#logoText {
+    font-family: "Inconsolata", monospace;
+    font-weight: 900;
+    font-size: 40px;
+    margin-bottom: -25px;
+    color: #FFFFFF;
+}
+#slogan {
+    font-family: "Inconsolata", monospace;
+    font-weight: 500;
+    font-size: 35px;
+    color: #FFFFFF;
+
+}
+#buttonPlay {
+    border: none;
+    padding: 12px 24px;
+    color: #FFFFFF;
+    background-color: #7E60BF;
+    box-shadow: 0px 12px 20px 1px rgba(0, 0, 0, 0.25);
+    transition-property: color, background-color;
+    transition-duration: 400ms;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+}
+#buttonPlay:hover {
+    color: #000000;
+    background-color: #ffffff;
+}
+/* Existing styles */
+
+/* Media query for screens with a maximum width of 540px */
+@media screen and (max-width: 540px) {
+    /* Adjust the glow effect */
+    .glow {
+        width: 150px;
+        height: 150px;
+    }
+    .glow::before, .glow::after {
+        max-width: calc(150px + 4px);
+        max-height: calc(150px + 4px);
+        width: calc(150px + 4px);
+        height: calc(150px + 4px);
+    }
+
+    /* Adjust the play button */
+    #playbutton {
+        width: 60px;
+        height: 40px;
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    /* Adjust the main items layout */
+    #mainItems {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+    }
+    #mainItems div {
+        margin: 15px 0;
+    }
+
+    /* Adjust the logo text and slogan */
+    #logoText {
+        font-size: 30px;
+    }
+    #slogan {
+        font-size: 25px;
+    }
+
+    /* Adjust the play button */
+    #buttonPlay {
+        padding: 10px 20px;
+    }
+
+    /* Adjust the top menu buttons */
+    #menuButton {
+        margin: 5px;
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
+    /* Adjust the live sign */
+    #liveSign {
+        width: 50px;
+        height: 20px;
+        top: 15px;
+        right: 15px;
+    }
+    #liveSignText {
+        font-size: 12px;
+    }
+    #liveSignCircle {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    /* Further adjustments for very small screens */
+    .glow {
+        width: 120px;
+        height: 120px;
+    }
+    .glow::before, .glow::after {
+        max-width: calc(120px + 4px);
+        max-height: calc(120px + 4px);
+        width: calc(120px + 4px);
+        height: calc(120px + 4px);
+    }
+
+    #playbutton {
+        width: 50px;
+        height: 35px;
+        font-size: 12px;
+        line-height: 25px;
+    }
+
+    #mainItems {
+        margin-top: 80px;
+    }
+
+    #logoText {
+        font-size: 25px;
+    }
+    #slogan {
+        font-size: 20px;
+    }
+
+    #buttonPlay {
+        padding: 8px 16px;
+    }
+
+    #menuButton {
+        margin: 3px;
+        padding: 3px 8px;
+        font-size: 12px;
+    }
+
+    #liveSign {
+        width: 40px;
+        height: 15px;
+        top: 10px;
+        right: 10px;
+    }
+    #liveSignText {
+        font-size: 10px;
+    }
+    #liveSignCircle {
+        width: 10px;
+        height: 10px;
+    }
+}
