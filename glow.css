@@ -2,7 +2,7 @@
 	position: relative;
 	width: 250px;
 	height: 250px;
-    background-image: url("https://lyeliect.sirv.com/Images/NO%20LOGO%20YET.png");
+    background-image: url("https://lyeliect.sirv.com/Images/20250112_150652.jpg");
     background-size: cover;
 	-webkit-border-radius: 50%;
 	   -moz-border-radius: 50%;
@@ -156,3 +156,4 @@ input::-webkit-slider-thumb {
 		background-position: 0 0;
 	}
 }
+
