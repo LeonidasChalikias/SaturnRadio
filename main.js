@@ -10,7 +10,7 @@ function playStream() {
     button.textContent = "PLAY"; // Change text to "Play"
   } else {
     if (!audio) {
-      audio = new Audio("https://stream.zeno.fm/c3vth2hpychvv");
+      audio = new Audio("Your server audio link");
     }
     audio.play();
     isPlaying = true;
