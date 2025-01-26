@@ -1,4 +1,5 @@
-![[https://raw.githubusercontent.com/LeonidasChalikias/SaturnRadio/refs/heads/main/ReadmePicture.png]] <br>
+![](https://raw.githubusercontent.com/LeonidasChalikias/SaturnRadio/refs/heads/main/ReadmePicture.png)
+<br>
 Hey! Happy you are here!
 Welcome to Saturn Radio our open source futuristic radio station.
 
